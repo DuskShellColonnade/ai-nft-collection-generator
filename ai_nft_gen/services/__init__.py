@@ -1,0 +1,1 @@
+"""External service adapters. All network I/O lives here."""
