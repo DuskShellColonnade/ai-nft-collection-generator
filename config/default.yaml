@@ -1,0 +1,48 @@
+# ai-nft-collection-generator — default collection config
+collection:
+  name: "Fridgeborn Taters"
+  symbol: "SPUD"
+  description: "A generative collection of AI-rendered taters. 2026."
+  size: 1000
+  chain: "base"
+  royalty_bps: 500
+
+traits:
+  source: "config/traits.yaml"
+  layer_order:
+    - background
+    - body
+    - eyes
+    - mouth
+    - hat
+    - accessory
+  incompatibilities:
+    - ["hat:crown", "accessory:halo"]
+    - ["background:void", "body:ghost"]
+
+render:
+  backend: "diffusers"
+  model_id: "stabilityai/sdxl-turbo"
+  steps: 6
+  guidance: 1.5
+  width: 1024
+  height: 1024
+  seed_offset: 6767
+  batch_size: 4
+  device: "cuda"
+
+rarity:
+  method: "trait_count"       # trait_count | rarity_score | information_content
+  normalize: true
+  min_unique_ratio: 0.85
+
+metadata:
+  schema: "erc721-metadata-1.0"
+  image_base: "ipfs://REPLACE_WITH_CID/"
+  external_url: "https://example.invalid/collection/fridgeborn-taters"
+
+pin:
+  provider: "pinata"
+  pin_images: true
+  pin_metadata: true
+  concurrency: 4
