@@ -1,0 +1,1 @@
+"""Feature modules. One concern per file, no cross-imports except via lib."""
