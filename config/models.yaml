@@ -1,0 +1,17 @@
+# Model registry. Weights are never committed; hashes are pinned.
+models:
+  sdxl-turbo:
+    repo: "stabilityai/sdxl-turbo"
+    revision: "main"
+    sha256: "0000000000000000000000000000000000000000000000000000000000000000"
+    notes: "Baseline render backend. 6 steps, guidance 1.5."
+  lora-tater-v3:
+    repo: "local/fridgeborn-tater-lora"
+    revision: "v3"
+    sha256: "1111111111111111111111111111111111111111111111111111111111111111"
+    notes: "Style LoRA. Load with weight 0.75 for trait-consistent renders."
+  clip-trait-scorer:
+    repo: "openai/clip-vit-base-patch32"
+    revision: "main"
+    sha256: "2222222222222222222222222222222222222222222222222222222222222222"
+    notes: "Used by rarity information_content method."
