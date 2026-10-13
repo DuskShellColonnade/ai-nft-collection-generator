@@ -1,0 +1,41 @@
+# Trait layer definitions. Weights are integers; rarity engine normalizes.
+background:
+  - { name: "fridge_white", weight: 40 }
+  - { name: "crisper_green", weight: 25 }
+  - { name: "shelf_shadow", weight: 20 }
+  - { name: "void", weight: 5 }
+  - { name: "golden_fridge", weight: 1 }
+
+body:
+  - { name: "russet", weight: 45 }
+  - { name: "yukon", weight: 25 }
+  - { name: "purple", weight: 15 }
+  - { name: "fingerling", weight: 10 }
+  - { name: "ghost", weight: 3 }
+  - { name: "cosmic", weight: 1 }
+
+eyes:
+  - { name: "three_eyes", weight: 35 }
+  - { name: "sleepy", weight: 25 }
+  - { name: "judging", weight: 20 }
+  - { name: "laser", weight: 5 }
+  - { name: "void_gaze", weight: 1 }
+
+mouth:
+  - { name: "smirk", weight: 40 }
+  - { name: "grin", weight: 30 }
+  - { name: "frown", weight: 20 }
+  - { name: "unhinged", weight: 8 }
+  - { name: "gold_tooth", weight: 2 }
+
+hat:
+  - { name: "none", weight: 50 }
+  - { name: "beanie", weight: 20 }
+  - { name: "chef_toque", weight: 15 }
+  - { name: "crown", weight: 5 }
+
+accessory:
+  - { name: "none", weight: 60 }
+  - { name: "peeler", weight: 15 }
+  - { name: "halo", weight: 10 }
+  - { name: "chain_6767", weight: 5 }
